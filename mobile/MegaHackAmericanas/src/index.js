@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {ThemeContext, themes} from './theme/themesContext';
+import {StyledStatusBar} from './components/StyledStatusBar/StyledStatusBar';
 import Routes from './routes';
 
 export default class App extends Component {
@@ -31,6 +32,7 @@ export default class App extends Component {
   render() {
     return (
       <ThemeContext.Provider value={this.state}>
+        <StyledStatusBar />
         <Routes />
       </ThemeContext.Provider>
     );

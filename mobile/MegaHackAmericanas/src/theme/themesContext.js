@@ -3,8 +3,8 @@ import React from 'react';
 export const themes = {
   light: {
     key: 'light',
-    primary: '#83B240',
-    primaryVariant: '#5b8a2d',
+    primary: '#e60014',
+    primaryVariant: '#E50A17',
     secondary: '#1063A9',
     secondaryVariant: '#00488A',
     tertiary: '#83B240',
