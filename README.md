@@ -31,7 +31,7 @@
 ## Download
 
 <br/>
-<a href="https://github.com/eduardohfs/MegahackTime30/download/android">Aplicativo Android</a> •
+<a href="https://github.com/eduardohfs/MegahackTime30/download/android">Aplicativo Android</a>
 <br/>
 
 ## Creditos
