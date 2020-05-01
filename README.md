@@ -11,9 +11,19 @@
 </h4>
 
 <p align="center">
-  <a href="#about">Sober</a> •
-  <a href="#how-to-use">Como usar</a> •
+  <a href="#about">Sobre</a> •
+  <a href="#como-usar">Como usar</a> •
   <a href="#download">Download</a> •
-  <a href="#credits">Credito</a> •
-  <a href="#license">Licensa</a> •
+  <a href="#creditos">Creditos</a> •
+  <a href="#Licensa">Licensa</a> 
 </p>
+
+## Sobre
+
+## Como Usar
+
+## Download
+
+## Creditos
+
+## Licensa
