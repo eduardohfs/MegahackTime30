@@ -1,9 +1,6 @@
 <h1 align="center">
   <br>
   <a href="https://www.megahack.com.br/"><img src="https://github.com/eduardohfs/MegahackTime30/blob/master/support_content/logo-megahack.png?raw=true" alt="MegaHack" width="300"></a>
-  <br>
-  MegaHack
-  <br>
 </h1>
 
 <h4 align="center">
@@ -19,6 +16,14 @@
 </p>
 
 ## Sobre
+
+<h1 align="center">
+  <br>
+  <a href="https://www.americanas.com.br/"><img src="https://github.com/eduardohfs/MegahackTime30/blob/master/support_content/logo-americanas.png?raw=true" alt="Americanas" width="300"></a>
+</h1>
+<h4 align="center">
+  O desafio escolhido por nossa equipe foi o proposto pelo Universo Americanas.
+</h4>
 
 ## Como Usar
 
