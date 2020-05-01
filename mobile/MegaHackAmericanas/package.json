@@ -1,0 +1,39 @@
+{
+  "name": "MegaHackAmericanas",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "android-release": "cd android && gradle assembleRelease && cd ..",
+    "ios": "npx react-native run-ios --simulator='iPhone 11'",
+    "ios-device": "react-native run-ios --device",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "gradle-clean": "cd android && gradle clean && cd .."
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.9.0",
+    "axios": "^0.19.2",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "styled-components": "^5.1.0",
+    "react-native-gesture-handler": "^1.5.3",
+    "react-navigation": "^4.0.10",
+    "react-navigation-stack": "^2.1.1",
+    "react-native-reanimated": "^1.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "react-test-renderer": "16.11.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
