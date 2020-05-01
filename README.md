@@ -38,13 +38,11 @@
 
 Este desafio foi realizado pelo time :
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/eduardo-santos-it/">Eduardo Santos</a> •
-  <a href="https://www.linkedin.com/in/lucasbertolo2/">Lucas Bertolo</a> •
-  <a href="https://www.linkedin.com/">Mauricio Silva</a> •
-  <a href="https://www.linkedin.com/in/yan-nunes-a3a52ab2/">Yan Nunes</a> •
-  <a href="https://www.linkedin.com/in/william-fontanetti">William Fontanetti</a> 
-</p>
+- [Eduardo Santos](https://www.linkedin.com/in/eduardo-santos-it/)
+- [Lucas Bertolo](https://www.linkedin.com/in/lucasbertolo2/)
+- [Mauricio Silva]()
+- [Yan Nunes](https://www.linkedin.com/in/yan-nunes-a3a52ab2/)
+- [William Fontanetti](https://www.linkedin.com/in/william-fontanetti)
 
 ## Licença
 
