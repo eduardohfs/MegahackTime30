@@ -6,7 +6,7 @@ import {HeaderProduct} from './HeaderProduct/HeaderProduct';
 import {MainProduct} from './MainProduct/MainProduct';
 import {SideList} from './SideList/SideList';
 
-const Container = styled.View`
+const Container = styled.ScrollView`
   flex: 1;
   background-color: ${props => props.theme.background};
 `;
