@@ -3,7 +3,6 @@ import img from '../../../assets/mock/Products/desodorante.png';
 import styled from 'styled-components';
 import {ThemeContext} from '../../../theme/themesContext';
 import starFilled from '../../../assets/images/star_filled.png';
-import starEmpty from '../../../assets/images/star_corner.png';
 
 const productsList = [
   {

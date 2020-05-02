@@ -27,7 +27,7 @@ export default createAppContainer(
       Products,
     },
     {
-      initialRouteName: 'Products',
+      initialRouteName: 'Main',
       defaultNavigationOptions: {
         headerTitleAlign: 'center',
         headerTitle: () => <Image source={logo} alt="logo" />,

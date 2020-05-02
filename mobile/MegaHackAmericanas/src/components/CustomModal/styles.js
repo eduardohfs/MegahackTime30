@@ -13,7 +13,7 @@ export const ModalContainer = styled.View`
 export const ChildrenContainer = styled.View`
   flex: 1;
   width: 100%;
-  background-color: ${props => props.theme.surfacePrimary};
+  background-color: ${props => props.theme.background};
   padding-top: 20px;
   border-radius: 10px;
 `;
