@@ -12,6 +12,7 @@ import logo from './assets/logo/logo.png';
 
 // #region [VIEWS]
 import Main from './views/Main/Main';
+import Products from './views/Products/Products';
 // #endregion
 
 /**
@@ -23,9 +24,10 @@ export default createAppContainer(
   createStackNavigator(
     {
       Main: Main,
+      Products,
     },
     {
-      initialRouteName: 'Main',
+      initialRouteName: 'Products',
       defaultNavigationOptions: {
         headerTitleAlign: 'center',
         headerTitle: () => <Image source={logo} alt="logo" />,
