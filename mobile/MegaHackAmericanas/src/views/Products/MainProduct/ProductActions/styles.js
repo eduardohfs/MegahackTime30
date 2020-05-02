@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import FontIcon from 'react-native-vector-icons/FontAwesome';
 
 export const ContainerActions = styled.View`
   flex-direction: column;
@@ -47,8 +48,16 @@ export const MainButton = styled.TouchableOpacity`
   height: 37px;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 `;
 
 export const MainButtonText = styled.Text`
   color: ${props => props.theme.background};
 `;
+
+export const MainButtonIcon = styled(FontIcon)`
+  padding-right: 10px;
+  color: ${props => props.theme.background};
+`;
+
+export const AvailableMessage = styled.View``;

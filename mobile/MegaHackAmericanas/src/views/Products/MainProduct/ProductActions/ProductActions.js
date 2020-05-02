@@ -4,18 +4,20 @@ import grouplist from '../../../../assets/icons/grouplist.png';
 import info from '../../../../assets/icons/info.png';
 import {ThemeContext} from '../../../../theme/themesContext';
 import {
+  AvailableMessage,
   ContainerActions,
   Icon,
   IconContent,
   IconText,
   MainButton,
+  MainButtonIcon,
   MainButtonText,
   SectionButton,
   SectionIcons,
   TouchableIcon,
 } from './styles';
 
-export function ProductActions() {
+export function ProductActions({availableNearby}) {
   const {theme} = useContext(ThemeContext);
 
   return (
@@ -41,9 +43,21 @@ export function ProductActions() {
         </IconContent>
       </SectionIcons>
       <SectionButton>
-        <MainButton theme={theme}>
-          <MainButtonText theme={theme}>pegar ou receber hoje</MainButtonText>
-        </MainButton>
+        {availableNearby ? (
+          <>
+            <AvailableMessage />
+            <MainButton theme={theme}>
+              <MainButtonText theme={theme}>
+                pegar ou receber hoje
+              </MainButtonText>
+            </MainButton>
+          </>
+        ) : (
+          <MainButton theme={theme}>
+            <MainButtonIcon theme={theme} name="shopping-basket" />
+            <MainButtonText theme={theme}>comprar</MainButtonText>
+          </MainButton>
+        )}
       </SectionButton>
     </ContainerActions>
   );

@@ -51,7 +51,9 @@ const ItemDescription = styled.View`
   padding: 10px;
 `;
 
-const ItemName = styled.Text``;
+const ItemName = styled.Text`
+  color: ${props => props.theme.onSurfacePrimary};
+`;
 
 const ItemPrice = styled.Text`
   font-weight: bold;
@@ -78,7 +80,7 @@ export function SideList() {
           <ItemRow theme={theme} key={product.id}>
             <Icon source={product.src} alt="buylist" resizeMode="center" />
             <ItemDescription>
-              <ItemName>{product.name}</ItemName>
+              <ItemName theme={theme}>{product.name}</ItemName>
               <Star source={starFilled} alt="star" resizeMode="center" />
               <ItemPrice>{`R$ ${product.price}`}</ItemPrice>
             </ItemDescription>
