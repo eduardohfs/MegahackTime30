@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import img from '../../../assets/mock/Products/desodorante.png';
 import styled from 'styled-components';
 import {ThemeContext} from '../../../theme/themesContext';
-import starFilled from '../../../assets/images/star_filled.png';
+import {StarRating} from '../../../components/StarRating/StarRating';
 
 const productsList = [
   {
@@ -69,6 +69,11 @@ export const Star = styled.Image`
   height: 18px;
 `;
 
+export const StarContainer = styled.View`
+  align-items: center;
+  width: 30%;
+`;
+
 export function SideList() {
   const {theme} = useContext(ThemeContext);
 
@@ -80,7 +85,9 @@ export function SideList() {
             <Icon source={product.src} alt="buylist" resizeMode="center" />
             <ItemDescription>
               <ItemName theme={theme}>{product.name}</ItemName>
-              <Star source={starFilled} alt="star" resizeMode="center" />
+              <StarContainer>
+                <StarRating rating={product.rating} starSize={12} />
+              </StarContainer>
               <ItemPrice>{`R$ ${product.price}`}</ItemPrice>
             </ItemDescription>
           </ItemRow>
