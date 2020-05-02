@@ -3,6 +3,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
 # User-specific files
 *.rsuser
 *.suo
@@ -12,6 +18,10 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
 # Mono auto generated files
 mono_crash.*
@@ -30,6 +40,9 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+msbuild.log
+msbuild.err
+msbuild.wrn
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
