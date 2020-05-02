@@ -61,3 +61,16 @@ export const Camera = styled(RNCamera)`
   height: 100%;
   width: 100%;
 `;
+
+export const AnimationView = styled.View`
+  height: 300px;
+  width: 300px;
+  elevation: 1;
+  display: flex;
+`;
+
+export const Overlay = styled.View`
+  display: flex;
+  top: 30%;
+  position: absolute;
+`;

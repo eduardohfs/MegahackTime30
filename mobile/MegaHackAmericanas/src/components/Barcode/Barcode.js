@@ -3,6 +3,8 @@ import {Modal} from 'react-native';
 import {RNCamera} from 'react-native-camera';
 import {ThemeContext} from '../../theme/themesContext';
 import {
+  AnimationView,
+  Overlay,
   FlashButton,
   Camera,
   Container,
@@ -10,6 +12,8 @@ import {
   WrapperTopBar,
   SaveButton,
 } from './styles';
+import {Animations} from '../Animations/Animations';
+import Qrcode from '../../assets/animation/qrcode.json';
 
 export class Barcode extends Component {
   constructor(props) {
@@ -94,6 +98,11 @@ export class Barcode extends Component {
             }}
             type={type}
           />
+          <Overlay>
+            <AnimationView>
+              <Animations source={Qrcode} />
+            </AnimationView>
+          </Overlay>
           <WrapperTopBar theme={theme}>
             <FlashButton
               name={flashMode === 'off' ? 'flash' : 'flash-off'}
