@@ -12,7 +12,7 @@ function definePlaceholder(variant, theme) {
   if (variant === 'secondary') {
     return theme.onSurfaceSecondary;
   }
-  return theme.onSurfacePrimary;
+  return theme.onSurfaceSecondary;
 }
 
 export const SearchContainer = styled.View`
@@ -82,7 +82,7 @@ export const StyledInput = styled.TextInput.attrs(({theme, variant}) => ({
     if (props.variant === 'secondary') {
       return props.theme.onSurfaceSecondary;
     }
-    return props.theme.onSurfacePrimary;
+    return props.theme.onSurfaceSecondary;
   }};
   padding-left: ${props => {
     if (props.hideArrow) {

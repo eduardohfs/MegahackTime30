@@ -1,23 +1,20 @@
 import React, {useContext} from 'react';
-import {Image, Text} from 'react-native';
-import prime from '../../assets/images/prime.png';
-import demo from '../../assets/mock/Products/demo.png';
-import {SwitchInput} from '../../components/Switch/Switch';
+import styled from 'styled-components';
 import {SearchBar} from '../../components/SearchBar/SearchBar';
 import {ThemeContext} from '../../theme/themesContext';
-import {
-  AsideText,
-  Code,
-  Container,
-  Description,
-  DescriptionCard,
-  FilterSection,
-  MainCardProduct,
-  PrimeBar,
-  ProductImage,
-  Title,
-  SearchContainer,
-} from './styles';
+import {HeaderProduct} from './HeaderProduct/HeaderProduct';
+import {MainProduct} from './MainProduct/MainProduct';
+import {SideList} from './SideList/SideList';
+
+const Container = styled.View`
+  flex: 1;
+  background-color: ${props => props.theme.background};
+`;
+
+export const SearchContainer = styled.View`
+  padding: 0px 20px;
+  background-color: ${props => props.theme.primary};
+`;
 
 export default function Products() {
   const {theme} = useContext(ThemeContext);
@@ -27,27 +24,9 @@ export default function Products() {
         <SearchBar />
       </SearchContainer>
       <Container theme={theme}>
-        <PrimeBar theme={theme}>
-          <FilterSection>
-            <SwitchInput value={true} onChange={() => console.log('mudei')} />
-            <Image source={prime} alt="logo" />
-            <Text>prime</Text>
-          </FilterSection>
-          <AsideText theme={theme}>refinar</AsideText>
-        </PrimeBar>
-        <MainCardProduct theme={theme}>
-          <ProductImage>
-            <Image source={demo} alt="logo" />
-          </ProductImage>
-          <DescriptionCard>
-            <Title>Desodorante Dove Men Aero</Title>
-            <Code theme={theme}>(Cód. 37559111)</Code>
-            <Description theme={theme}>
-              Com o Dove Men + Care você garante 48 horas de proteção seca e
-              ação antibacteriana. Poderoso contra suor, mas sem irritar a pele
-            </Description>
-          </DescriptionCard>
-        </MainCardProduct>
+        <HeaderProduct />
+        <MainProduct />
+        <SideList />
       </Container>
     </>
   );
