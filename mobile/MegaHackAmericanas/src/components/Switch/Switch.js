@@ -1,18 +1,18 @@
 import React, {useContext} from 'react';
-import {View} from 'react-native';
+import {Switch} from 'react-native';
 import {ThemeContext} from '../../theme/themesContext';
-import {StyledSwitch, SwitchLabel, SwitchContainer} from './styles';
+import {SwitchLabel, SwitchContainer} from './styles';
 
 export function SwitchInput({value, label, onChange, disabled}) {
   const {theme} = useContext(ThemeContext);
 
   return (
     <SwitchContainer>
-      <StyledSwitch
-        theme={theme}
-        value={value}
-        onChange={onChange}
-        disabled={disabled}
+      <Switch
+        thumbColor={[theme.success]}
+        trackColor={{true: theme.success, false: theme.onPrimary}}
+        onValueChange={onChange}
+        value={true}
       />
       {label && <SwitchLabel theme={theme}>{label}</SwitchLabel>}
     </SwitchContainer>
