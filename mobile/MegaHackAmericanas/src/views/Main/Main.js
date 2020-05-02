@@ -3,7 +3,7 @@ import {Barcode} from '../../components/Barcode/Barcode';
 import {BottomNavBar} from '../../components/BottomNavBar/BottomNavBar';
 import {ThemeContext} from '../../theme/themesContext';
 import {SearchBar} from '../../components/SearchBar/SearchBar';
-
+import {CustomModal} from '../../components/CustomModal/CustomModal';
 //#region [MOCK IMG]
 import horizontaList from '../../assets/mock/Main/horizontaList.png';
 import covid from '../../assets/mock/Main/covid.png';
@@ -18,7 +18,7 @@ import opniao from '../../assets/mock/Main/opniao.png';
 //#endregion
 
 import {Container, MockImg, Scroll, SearchContainer} from './styles';
-export default function Main() {
+export default function Main({navigation}) {
   const {theme} = useContext(ThemeContext);
   const [show, setShow] = useState(false);
 
@@ -26,11 +26,20 @@ export default function Main() {
     setShow(!show);
   };
 
+  const handleNavigation = link => {
+    if (link !== null) {
+      navigation.navigate(link);
+    }
+  };
+
   return (
     <>
       <Barcode
         open={show}
-        onCapture={res => console.log(res)}
+        onCapture={res => {
+          console.log(res);
+          handleNavigation('Products');
+        }}
         onClose={() => handleShow()}
       />
       <SearchContainer theme={theme}>

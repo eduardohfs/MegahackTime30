@@ -13,7 +13,7 @@ export const themes = {
     snackbar: '#000000dd',
     surfacePrimary: '#F4F4F4',
     surfaceSecondary: '#F4F4F4',
-    surfaceTertiary: '#E2E2E2',
+    surfaceTertiary: '#A6A6A6',
     error: '#B00020',
     success: '#4BB543',
     warning: '#FFD24D',
