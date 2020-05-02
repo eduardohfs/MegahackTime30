@@ -21,36 +21,36 @@ import heart from '../../assets/icons/heart.png';
 import more from '../../assets/icons/more.png';
 import leitor from '../../assets/icons/leitor.png';
 
-export const BottomNavBar = () => {
+export const BottomNavBar = ({action}) => {
   const context = useContext(ThemeContext);
   const {theme} = context;
   return (
     <>
       <BottomNav theme={theme}>
         <BottomNavImg source={bar} alt="bar" resizeMode="stretch" />
-        <BottomNavLeftArea>
-          <BottomNavItemContainer>
+        <BottomNavLeftArea theme={theme}>
+          <BottomNavItemContainer theme={theme}>
             <Icon source={listIcon} alt="listIcon" resizeMode="center" />
-            <ItemText>categoria</ItemText>
+            <ItemText theme={theme}>categoria</ItemText>
           </BottomNavItemContainer>
-          <BottomNavItemContainer>
+          <BottomNavItemContainer theme={theme}>
             <Icon source={cesta} alt="cesta" resizeMode="center" />
-            <ItemText>cesta</ItemText>
+            <ItemText theme={theme}>cesta</ItemText>
           </BottomNavItemContainer>
         </BottomNavLeftArea>
-        <BottomNavRightArea>
-          <BottomNavItemContainer>
+        <BottomNavRightArea theme={theme}>
+          <BottomNavItemContainer theme={theme}>
             <Icon source={heart} alt="heart" resizeMode="center" />
-            <ItemText>favoritos</ItemText>
+            <ItemText theme={theme}>favoritos</ItemText>
           </BottomNavItemContainer>
-          <BottomNavItemContainer>
+          <BottomNavItemContainer theme={theme}>
             <Icon source={more} alt="more" resizeMode="center" />
-            <ItemText>mais</ItemText>
+            <ItemText theme={theme}>mais</ItemText>
           </BottomNavItemContainer>
         </BottomNavRightArea>
       </BottomNav>
       <BottomNavFix theme={theme} />
-      <FabBottomNav>
+      <FabBottomNav theme={theme} onPress={action}>
         <BarcodeIcon source={leitor} alt="leitor" resizeMode="center" />
       </FabBottomNav>
     </>

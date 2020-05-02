@@ -15,3 +15,8 @@ export const Container = styled.View`
 export const MockImg = styled.Image`
   width: 100%;
 `;
+
+export const SearchContainer = styled.View`
+  padding: 0px 20px;
+  background-color: ${props => props.theme.primary};
+`;

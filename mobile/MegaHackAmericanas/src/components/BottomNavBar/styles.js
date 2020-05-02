@@ -31,6 +31,7 @@ export const BottomNavImg = styled.Image`
 `;
 
 export const FabBottomNav = styled.TouchableOpacity`
+  elevation: 12;
   position: absolute;
   bottom: 30px;
   left: ${calc()};
@@ -38,6 +39,8 @@ export const FabBottomNav = styled.TouchableOpacity`
   width: 72px;
   height: 72px;
   background-color: #f4f4f4;
+  border-width: 1px;
+  border-color: #fafafa;
   border-radius: 36px;
   align-items: center;
   justify-content: center;

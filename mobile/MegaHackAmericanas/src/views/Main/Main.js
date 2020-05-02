@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useContext, useState} from 'react';
 import {Barcode} from '../../components/Barcode/Barcode';
 import {BottomNavBar} from '../../components/BottomNavBar/BottomNavBar';
+import {ThemeContext} from '../../theme/themesContext';
+import {SearchBar} from '../../components/SearchBar/SearchBar';
+
 //#region [MOCK IMG]
 import horizontaList from '../../assets/mock/Main/horizontaList.png';
 import covid from '../../assets/mock/Main/covid.png';
@@ -14,11 +17,25 @@ import sansung from '../../assets/mock/Main/sansung.png';
 import opniao from '../../assets/mock/Main/opniao.png';
 //#endregion
 
-import {Container, MockImg, Scroll} from './styles';
+import {Container, MockImg, Scroll, SearchContainer} from './styles';
 export default function Main() {
+  const {theme} = useContext(ThemeContext);
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => {
+    setShow(!show);
+  };
+
   return (
     <>
-      <Barcode open={false} onCapture={res => console.log(res)} />
+      <Barcode
+        open={show}
+        onCapture={res => console.log(res)}
+        onClose={() => handleShow()}
+      />
+      <SearchContainer theme={theme}>
+        <SearchBar />
+      </SearchContainer>
       <Scroll>
         <Container>
           <MockImg
@@ -46,7 +63,7 @@ export default function Main() {
           <MockImg source={opniao} alt="opniao" resizeMode="center" />
         </Container>
       </Scroll>
-      <BottomNavBar />
+      <BottomNavBar action={() => handleShow()} />
     </>
   );
 }
