@@ -23,11 +23,11 @@ import Products from './views/Products/Products';
 export default createAppContainer(
   createStackNavigator(
     {
-      Main: Main,
+      Main,
       Products,
     },
     {
-      initialRouteName: 'Products',
+      initialRouteName: 'Main',
       defaultNavigationOptions: {
         headerTitleAlign: 'center',
         headerTitle: () => <Image source={logo} alt="logo" />,
