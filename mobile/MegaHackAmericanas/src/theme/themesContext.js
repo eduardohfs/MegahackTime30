@@ -17,7 +17,7 @@ export const themes = {
     error: '#B00020',
     success: '#4BB543',
     warning: '#FFD24D',
-    meta: '#9E9E9E',
+    meta: '#E9E9E9',
     disabled: '#E0E0E0',
     onPrimary: '#FFFFFF',
     onSecondary: '#FFFFFF',
