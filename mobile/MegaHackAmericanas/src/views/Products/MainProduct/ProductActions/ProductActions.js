@@ -1,6 +1,7 @@
 import React, {useContext, useState} from 'react';
 import {CustomModal} from '../../../../components/CustomModal/CustomModal';
 import {RatingsModal} from '../../RatingsModal/RatingsModal';
+import {InfoModal} from '../../InfoModal/InfoModal';
 import comments from '../../../../assets/icons/comments.png';
 import grouplist from '../../../../assets/icons/grouplist.png';
 import info from '../../../../assets/icons/info.png';
@@ -21,9 +22,14 @@ import {
 export function ProductActions({availableNearby}) {
   const {theme} = useContext(ThemeContext);
   const [modalRatings, setModalRatings] = useState(false);
+  const [modalInfo, setModalInfo] = useState(false);
 
   const handleShowModalRatings = () => {
     setModalRatings(!modalRatings);
+  };
+
+  const handleShowModalInfo = () => {
+    setModalInfo(!modalInfo);
   };
 
   return (
@@ -43,7 +49,7 @@ export function ProductActions({availableNearby}) {
             <IconText theme={theme}>avaliações e comentários</IconText>
           </IconContent>
           <IconContent>
-            <TouchableIcon>
+            <TouchableIcon onPress={handleShowModalInfo}>
               <Icon source={info} alt="buylist" resizeMode="center" />
             </TouchableIcon>
             <IconText theme={theme}>saiba mais informações</IconText>
@@ -68,6 +74,9 @@ export function ProductActions({availableNearby}) {
       </ContainerActions>
       <CustomModal onClose={handleShowModalRatings} visible={modalRatings}>
         <RatingsModal />
+      </CustomModal>
+      <CustomModal onClose={handleShowModalInfo} visible={modalInfo}>
+        <InfoModal />
       </CustomModal>
     </>
   );
