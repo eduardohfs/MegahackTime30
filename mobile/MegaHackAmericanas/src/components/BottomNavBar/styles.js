@@ -38,9 +38,9 @@ export const FabBottomNav = styled.TouchableOpacity`
   z-index: 2;
   width: 72px;
   height: 72px;
-  background-color: #f4f4f4;
-  border-width: 1px;
-  border-color: #fafafa;
+  background-color: #5dac29;
+  /* border-width: 1px;
+  border-color: #fafafa; */
   border-radius: 36px;
   align-items: center;
   justify-content: center;
