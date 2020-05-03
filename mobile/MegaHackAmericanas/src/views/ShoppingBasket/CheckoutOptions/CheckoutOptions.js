@@ -17,7 +17,7 @@ import {
 
 export function CheckoutOptions() {
   const {theme} = useContext(ThemeContext);
-  const [showCheckout, setShowCheckout] = useState(false);
+  const [showCheckout, setShowCheckout] = useState(true);
 
   const handleCheckoutDisplay = () => {
     setShowCheckout(!showCheckout);

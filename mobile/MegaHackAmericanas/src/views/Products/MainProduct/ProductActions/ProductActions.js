@@ -19,7 +19,7 @@ import {
   TouchableIcon,
 } from './styles';
 
-export function ProductActions({availableNearby}) {
+export function ProductActions({handleNavigate, availableNearby}) {
   const {theme} = useContext(ThemeContext);
   const [modalRatings, setModalRatings] = useState(false);
   const [modalInfo, setModalInfo] = useState(false);
@@ -37,7 +37,7 @@ export function ProductActions({availableNearby}) {
       <ContainerActions>
         <SectionIcons>
           <IconContent>
-            <TouchableIcon>
+            <TouchableIcon onPress={() => handleNavigate('ShoppingBasket')}>
               <Icon source={grouplist} alt="buylist" resizeMode="center" />
             </TouchableIcon>
             <IconText theme={theme}>adicione à sua lista de compras</IconText>

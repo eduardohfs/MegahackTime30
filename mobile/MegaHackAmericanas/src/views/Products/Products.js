@@ -16,7 +16,10 @@ export const SearchContainer = styled.View`
   background-color: ${props => props.theme.primary};
 `;
 
-export default function Products() {
+export default function Products({navigation}) {
+  const handleNavigate = link => {
+    navigation.navigate(link);
+  };
   const {theme} = useContext(ThemeContext);
   return (
     <>
@@ -25,7 +28,7 @@ export default function Products() {
       </SearchContainer>
       <Container theme={theme}>
         <HeaderProduct />
-        <MainProduct />
+        <MainProduct handleNavigate={handleNavigate} />
         <SideList />
       </Container>
     </>

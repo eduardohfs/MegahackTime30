@@ -11,12 +11,12 @@ export const Container = styled.View`
   flex: 1;
   justify-content: flex-end;
 `;
-export default function ShoppingBasket() {
+export default function ShoppingBasket({navigation}) {
   const {theme} = useContext(ThemeContext);
 
   return (
     <Container theme={theme}>
-      <Header onClose={() => console.log('voltar')} />
+      <Header onClose={() => navigation.goBack()} />
       <ProductsList />
       <CheckoutOptions />
       <BottomNavBar hideFab backgroundColor={theme.background} />
