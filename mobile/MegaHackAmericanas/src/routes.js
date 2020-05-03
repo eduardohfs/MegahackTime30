@@ -13,6 +13,8 @@ import logo from './assets/logo/logo.png';
 // #region [VIEWS]
 import Main from './views/Main/Main';
 import Products from './views/Products/Products';
+import ShoppingBasket from './views/ShoppingBasket/ShoppingBasket';
+
 // #endregion
 
 /**
@@ -25,6 +27,7 @@ export default createAppContainer(
     {
       Main,
       Products,
+      ShoppingBasket,
     },
     {
       initialRouteName: 'Main',

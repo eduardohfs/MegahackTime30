@@ -6,7 +6,6 @@ import grouplist from '../../../../assets/icons/grouplist.png';
 import info from '../../../../assets/icons/info.png';
 import {ThemeContext} from '../../../../theme/themesContext';
 import {
-  AvailableMessage,
   ContainerActions,
   Icon,
   IconContent,
@@ -53,7 +52,6 @@ export function ProductActions({availableNearby}) {
         <SectionButton>
           {availableNearby ? (
             <>
-              <AvailableMessage />
               <MainButton theme={theme}>
                 <MainButtonText theme={theme}>
                   pegar ou receber hoje

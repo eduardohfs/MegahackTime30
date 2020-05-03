@@ -1,8 +1,16 @@
 import React, {useContext} from 'react';
 import img from '../../../assets/mock/Products/desodorante.png';
-import styled from 'styled-components';
 import {ThemeContext} from '../../../theme/themesContext';
 import {StarRating} from '../../../components/StarRating/StarRating';
+import {
+  ContainerSideList,
+  ItemRow,
+  Icon,
+  ItemDescription,
+  ItemName,
+  StarContainer,
+  ItemPrice,
+} from './style';
 
 const productsList = [
   {
@@ -35,45 +43,6 @@ const productsList = [
   },
 ];
 
-const ContainerSideList = styled.View`
-  background-color: ${props => props.theme.meta};
-`;
-
-const ItemRow = styled.View`
-  flex-direction: row;
-  background-color: ${props => props.theme.background};
-  padding: 10px;
-  margin: 4px 10px;
-`;
-
-const ItemDescription = styled.View`
-  padding: 10px;
-`;
-
-const ItemName = styled.Text`
-  color: ${props => props.theme.onSurfacePrimary};
-`;
-
-const ItemPrice = styled.Text`
-  font-weight: bold;
-`;
-
-export const Icon = styled.Image`
-  width: 64px;
-  height: 64px;
-  padding: 20px;
-`;
-
-export const Star = styled.Image`
-  width: 18px;
-  height: 18px;
-`;
-
-export const StarContainer = styled.View`
-  align-items: center;
-  width: 30%;
-`;
-
 export function SideList() {
   const {theme} = useContext(ThemeContext);
 
@@ -82,7 +51,7 @@ export function SideList() {
       {productsList.length > 0 &&
         productsList.map(product => (
           <ItemRow theme={theme} key={product.id}>
-            <Icon source={product.src} alt="buylist" resizeMode="center" />
+            <Icon source={product.src} alt="product" resizeMode="center" />
             <ItemDescription>
               <ItemName theme={theme}>{product.name}</ItemName>
               <StarContainer>

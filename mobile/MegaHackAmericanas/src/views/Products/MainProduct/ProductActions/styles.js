@@ -59,5 +59,3 @@ export const MainButtonIcon = styled(FontIcon)`
   padding-right: 10px;
   color: ${props => props.theme.background};
 `;
-
-export const AvailableMessage = styled.View``;

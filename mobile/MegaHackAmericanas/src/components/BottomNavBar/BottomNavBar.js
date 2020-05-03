@@ -21,7 +21,7 @@ import heart from '../../assets/icons/heart.png';
 import more from '../../assets/icons/more.png';
 import leitor from '../../assets/icons/leitor.png';
 
-export const BottomNavBar = ({action}) => {
+export const BottomNavBar = ({action, hideFab}) => {
   const context = useContext(ThemeContext);
   const {theme} = context;
   return (
@@ -50,9 +50,11 @@ export const BottomNavBar = ({action}) => {
         </BottomNavRightArea>
       </BottomNav>
       <BottomNavFix theme={theme} />
-      <FabBottomNav theme={theme} onPress={action}>
-        <BarcodeIcon source={leitor} alt="leitor" resizeMode="center" />
-      </FabBottomNav>
+      {!hideFab && (
+        <FabBottomNav theme={theme} onPress={action}>
+          <BarcodeIcon source={leitor} alt="leitor" resizeMode="center" />
+        </FabBottomNav>
+      )}
     </>
   );
 };
