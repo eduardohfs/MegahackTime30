@@ -1,4 +1,6 @@
 ﻿using API.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +15,10 @@ namespace API.Data.Mappings
             builder.ToTable("ProductPhoto");
             builder.Property(b => b.Product).IsRequired();
             builder.Property(b => b.Image).IsRequired();
+
+            builder.HasOne(b => b.Product)
+                .WithMany(p => p.ProductPhotos)
+                .HasForeignKey(b => b.ProductId);
         }
     }
 }

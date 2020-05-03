@@ -19,6 +19,14 @@ namespace API.Data.Mappings
             builder.Property(b => b.Product).IsRequired();
             builder.Property(b => b.Quantity).IsRequired();
             builder.Property(b => b.Total).IsRequired();
+
+            builder.HasOne(b => b.User)
+            .WithMany(u => u.OrderItems)
+            .HasForeignKey(b => b.UserId);
+
+            builder.HasOne(b => b.Product)
+            .WithMany(p => p.OrderItems)
+            .HasForeignKey(b => b.ProductId);
         }
     }
 }

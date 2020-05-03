@@ -18,6 +18,9 @@ namespace API.Models
         public bool Recurrence { get; set; }
         public bool SelfCheckout { get; set; }
         public decimal Price { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; }
+        public ICollection<ProductPhoto> ProductPhotos { get; set; }
+        public ICollection<Review> Reviews { get; set; }
 
         public Product()
         {
