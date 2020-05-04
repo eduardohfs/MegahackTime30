@@ -9,8 +9,7 @@
 
 <p align="center">
   <a href="#about">Sobre</a> •
-  <a href="#como-usar">Como usar</a> •
-  <a href="#download">Download</a> •
+  <a href="#apresentação">Apresentação</a> •
   <a href="#creditos">Creditos</a> •
   <a href="#licença">Licença</a> 
 </p>
@@ -26,12 +25,10 @@
   O desafio escolhido por nossa equipe foi o proposto pelo Universo Americanas.
 </h4>
 
-## Como Usar
-
-## Download
+## Apresentação
 
 <br/>
-<a href="https://github.com/eduardohfs/MegahackTime30/download/android">Aplicativo Android</a>
+<a href="https://github.com/eduardohfs/MegahackTime30/blob/master/presentation/apresenta%C3%A7%C3%A3o-desafio-americanas.pdf">Link</a>
 <br/>
 
 ## Creditos
