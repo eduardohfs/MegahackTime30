@@ -28,6 +28,8 @@
 
 ## Apresentação
 
+[![Time 30 - Desafio Universo Americanas](https://res.cloudinary.com/marcomontalbano/image/upload/v1588626766/video_to_markdown/images/youtube--lAkt2w5vzz8-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=lAkt2w5vzz8&feature=youtu.be "Time 30 - Desafio Universo Americanas")
+
 <p>
 Você sabia que nova em cada dez consumidores já desistiram de uma compra por causa de filas grandes e que 78% não compraram por falta de informações sobre o produto que gostaria de comprar? 
 <br>
