@@ -32,7 +32,7 @@ export default class App extends Component {
   render() {
     return (
       <ThemeContext.Provider value={this.state}>
-        <StyledStatusBar />
+        <StyledStatusBar background={this.state.theme.primary} />
         <Routes />
       </ThemeContext.Provider>
     );
