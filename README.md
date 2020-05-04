@@ -28,7 +28,7 @@
 ## Apresentação
 
 <br/>
-<a href="https://github.com/eduardohfs/MegahackTime30/presentation/apresentação-desafio-americanas.pdf">Link</a>
+<a href="https://github.com/eduardohfs/MegahackTime30/blob/master/presentation/apresenta%C3%A7%C3%A3o-desafio-americanas.pdf">Link</a>
 <br/>
 
 ## Creditos
