@@ -53,7 +53,7 @@ Veja nosso material:
 - [Apresentação](https://github.com/eduardohfs/MegahackTime30/blob/master/presentation/apresenta%C3%A7%C3%A3o-desafio-americanas.pdf)
 - [Protótipo Mobile - Uso fora da Loja]()
 - [Protótipo Mobile - Uso na Loja](https://xd.adobe.com/view/2d3152e9-db77-491d-7bfa-b1ef52db3efd-5b00/?fullscreen)
-- [Totem de Self-Checkout]()
+- [Totem de Self-Checkout](https://xd.adobe.com/view/32f2f9a8-21ef-4cdd-76e8-cb885d29bd7b-44c3/?fullscreen)
 
 ## Creditos
 
