@@ -10,6 +10,7 @@
 <p align="center">
   <a href="#about">Sobre</a> •
   <a href="#apresentação">Apresentação</a> •
+  <a href="#material">Material</a> •
   <a href="#creditos">Creditos</a> •
   <a href="#licença">Licença</a> 
 </p>
@@ -27,9 +28,32 @@
 
 ## Apresentação
 
-<br/>
-<a href="https://github.com/eduardohfs/MegahackTime30/blob/master/presentation/apresenta%C3%A7%C3%A3o-desafio-americanas.pdf">Link</a>
-<br/>
+<p>
+Você sabia que nova em cada dez consumidores já desistiram de uma compra por causa de filas grandes e que 78% não compraram por falta de informações sobre o produto que gostaria de comprar? 
+<br>
+Foi a partir desses problemas que decidimos criar soluções e modificar alguns recursos existentes para otimizar tempo e agregar mais valor aos produtos para o cliente Americanas.
+<br>
+Já sabemos que self-checkout é a tecnologia do momento, mas não só isso, ela é a aposta de muitos varejistas e marketplace para o ano de 2020. Foi pensando nisso que decidimos melhorar a forma de pagamento das lojas físicas, integrando o app, totem de autoatendimento e self-checkout. 
+<br>
+E não paramos por aí, escolhemos alterar o layout de algumas telas do app Americanas para aumentar a conversão de clientes, agregando mais informações ao produto e deixando a navegação mais clara e intuitiva. 
+<br>
+Outro problema que decidimos resolver foi a falta de variedade dos produtos das lojas físicas. Você sabe como é chegar numa loja e não ter o produto que você tanto quer em estoque e acabar andando o shopping inteiro atrás dele, sem contar a variação de preços e formas de pagamento, cansativo, não é? 
+<br>
+Por isso, a inclusão de totem de autoatendimento, não só resolve a questão do pagamento, como também oferece ao cliente um catálogo completo de produtos que só o app Americanas possui. Assim, ele pode escolher o produto que está buscando, acrescentar a cesta e comprar. A entrega é bem simplificada, você espera para receber em casa, ou busca na loja. 
+<br>
+Nossa solução foi validada a partir de pesquisas qualitativas com clientes fiéis e por pesquisas de mercado e tendências do mundo. Observamos cada vez mais que os brasileiros usam o celular, e não a carteira, para efetuar pagamentos, tanto em lojas físicas como virtuais. E não só aqui no Brasil não, no mundo inteiro.
+<br>
+Acreditamos que dessa forma, a Americanas poderá agregar mais valor aos seus produtos e marcas, integrando o mundo físico com o mundo digital. 
+</p>
+
+## Material
+
+Veja nosso material:
+
+- [Apresentação](https://github.com/eduardohfs/MegahackTime30/blob/master/presentation/apresenta%C3%A7%C3%A3o-desafio-americanas.pdf)
+- [Protótipo Mobile - Uso fora da Loja]()
+- [Protótipo Mobile - Uso na Loja](https://xd.adobe.com/view/2d3152e9-db77-491d-7bfa-b1ef52db3efd-5b00/?fullscreen)
+- [Totem de Self-Checkout]()
 
 ## Creditos
 
