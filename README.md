@@ -50,10 +50,10 @@ Acreditamos que dessa forma, a Americanas poderá agregar mais valor aos seus pr
 
 ## Material
 
-Veja nosso material:
+Veja todo o material produzido para este desafio nos seguintes links:
 
 - [Apresentação](https://github.com/eduardohfs/MegahackTime30/blob/master/presentation/apresenta%C3%A7%C3%A3o-desafio-americanas.pdf)
-- [Apresentação em video](https://www.youtube.com/watch?v=lAkt2w5vzz8&feature=youtu.be)
+- [Apresentação em Vídeo](https://www.youtube.com/watch?v=lAkt2w5vzz8&feature=youtu.be)
 - [Protótipo Mobile - Uso fora da Loja](https://xd.adobe.com/view/96a5dd33-4b3f-4e21-769a-a9f456322807-e094/?fullscreen)
 - [Protótipo Mobile - Uso na Loja](https://xd.adobe.com/view/2d3152e9-db77-491d-7bfa-b1ef52db3efd-5b00/?fullscreen)
 - [Totem de Self-Checkout](https://xd.adobe.com/view/32f2f9a8-21ef-4cdd-76e8-cb885d29bd7b-44c3/?fullscreen)
@@ -62,11 +62,11 @@ Veja nosso material:
 
 Este desafio foi realizado pelo time :
 
-- [Eduardo Santos](https://www.linkedin.com/in/eduardo-santos-it/)
-- [Lucas Bertolo](https://www.linkedin.com/in/lucasbertolo2/)
-- [Mauricio Silva]()
 - [Yan Nunes](https://www.linkedin.com/in/yan-nunes-a3a52ab2/)
 - [William Fontanetti](https://www.linkedin.com/in/william-fontanetti)
+- [Lucas Bertolo](https://www.linkedin.com/in/lucasbertolo2/)
+- [Mauricio Silva]()
+- [Eduardo Santos](https://www.linkedin.com/in/eduardo-santos-it/)
 
 ## Licença
 
