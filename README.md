@@ -52,7 +52,7 @@ Acreditamos que dessa forma, a Americanas poderá agregar mais valor aos seus pr
 
 Veja todo o material produzido para este desafio nos seguintes links:
 
-- [Apresentação](https://github.com/eduardohfs/MegahackTime30/blob/master/presentation/apresenta%C3%A7%C3%A3o-desafio-americanas.pdf)
+- [Apresentação](https://github.com/eduardohfs/MegahackTime30/blob/master/presentation/apresenta%C3%A7%C3%A3o-desafio-americanas-compactado.pdf)
 - [Apresentação em Vídeo](https://www.youtube.com/watch?v=lAkt2w5vzz8&feature=youtu.be)
 - [Protótipo Mobile - Uso fora da Loja](https://xd.adobe.com/view/96a5dd33-4b3f-4e21-769a-a9f456322807-e094/?fullscreen)
 - [Protótipo Mobile - Uso na Loja](https://xd.adobe.com/view/2d3152e9-db77-491d-7bfa-b1ef52db3efd-5b00/?fullscreen)
